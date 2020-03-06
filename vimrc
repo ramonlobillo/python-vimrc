@@ -104,8 +104,9 @@ inoremap jk <Esc>
 tab sball
 set switchbuf=useopen
 set laststatus=2
-nmap <F9> :bprev<CR>
-nmap <F10> :bnext<CR>
+nmap <F2> :vimgrep /<C-R><C-W>/ **/*<CR>copen<CR>
+nmap <F3> :bprev<CR>
+nmap <F4> :bnext<CR>
 nmap <silent> <leader>q :SyntasticCheck # <CR> :bp <BAR> bd #<CR>
 
 "" Search settings
